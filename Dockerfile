@@ -1,11 +1,11 @@
 #Build Test
-FROM caddy:2.7.2-builder AS builder
+FROM caddy:2.7.3-builder AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
     --with github.com/hslatman/caddy-crowdsec-bouncer/http@main
 
-FROM caddy:2.7.2-alpine
+FROM caddy:2.7.3-alpine
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
