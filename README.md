@@ -1,6 +1,6 @@
 # caddy-dns
 
-Caddy docker-image compiled to work with Cloudflare DNS
+Caddy docker-image compiled to work with DNS Challenge
 
 ```
 version: "3.7"
