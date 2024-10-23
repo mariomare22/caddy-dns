@@ -17,19 +17,16 @@ services:
 
 ```
 
-For creating a Cloudflare Token
-https://github.com/libdns/cloudflare
-
 create a `Caddyfile`
 
 ```
-(cloudflare) {
+(ionos) {
       tls {
-        dns cloudflare YOUR_API_KEY
+        dns ionos YOUR_API_KEY
       }
 }
 my.domain.com {
       reverse_proxy http://resource
-      import cloudflare
+      import ionos
 }
 ```
