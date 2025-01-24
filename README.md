@@ -3,8 +3,6 @@
 Caddy docker-image compiled to work with DNS Challenge
 
 ```
-version: "3.7"
-
 services:
   caddy-sec:
     container_name: caddy-dns
