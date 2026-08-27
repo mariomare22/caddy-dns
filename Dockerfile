@@ -2,7 +2,7 @@
 FROM caddy:2.11.2-builder-alpine AS builder
 
 RUN xcaddy build \
-    --with github.com/caddy-dns/hetzner
+    --with github.com/caddy-dns/hetzner/v2
 
 FROM caddy:2.11.2-alpine
 
